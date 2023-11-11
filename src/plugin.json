@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
   "type": "panel",
-  "name": "Sensor Test",
+  "name": "Panel Sensor Test",
   "id": "lateraltest-sensortest-panel",
   "info": {
     "keywords": ["panel"],

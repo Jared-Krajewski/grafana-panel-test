@@ -6,7 +6,7 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
   return builder
     .addTextInput({
       path: 'text',
-      name: 'Simple text option',
+      name: 'Custom Panel Item',
       description: 'Description of panel option',
       defaultValue: 'Default value of text input option',
     })
@@ -36,5 +36,27 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
         ],
       },
       showIf: (config) => config.showSeriesCount,
-    });
+    }
+  )
+    .addRadio({
+  path: 'color',
+  name: 'Custom Circle color',
+  defaultValue: 'red',
+  settings: {
+    options: [
+      {
+        value: 'red',
+        label: 'Red',
+      },
+      {
+        value: 'brown',
+        label: 'TestGreen',
+      },
+      {
+        value: 'blue',
+        label: 'Blue',
+      },
+    ],
+  }
+});
 });
